@@ -1,0 +1,39 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.form1 {
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #FFC300;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.form2 {
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #FFC300;
+    margin: auto;
+}
+.form1 h2, .form2 h2 {
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.form1 input, .form2 input {
+    margin-bottom: 5px;
+}
+.form2 input[type=button], .form1 input[type=button] {
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.form1 .order {
+    text-align: center;
+}
+.form2 .orderBack {
+    text-align: center;
+}

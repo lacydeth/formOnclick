@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <div class="form1">
+        <form>
+           <h2>Megrendelés</h2> 
+           <div class="order">
+                <label>Megrendelő neve:</label>
+                <input onfocus="orderFocus(this)" onblur="orderBlur(this)" type="text" id="orderName"><br>
+                <label>Megrendelő címe:</label>
+                <input onfocus="orderFocus(this)" onblur="orderBlur(this)" type="text" id="orderAddress"><br>
+                <label>Megrendelő telefonszáma:</label>
+                <input onfocus="orderFocus(this)" onblur="orderBlur(this)" type="tel" id="orderTel" value="+36"><br>
+                <input onclick="order()" type="button" value="Elküld">
+           </div>
+        </form>
+    </div>
+    <div class="form2">
+        <div class="orderBack">
+            <h2>Visszaigazolás</h2>
+            <p id="orderNameBack">Név: ?</p>
+            <p id="orderAddressBack">Cím: ?</p>
+            <p id="orderTelBack">Telefon: ?</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
